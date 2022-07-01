@@ -1,0 +1,151 @@
+.menus_holder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.menu_names a{
+    text-decoration: none;
+    color: black;
+}
+.card1 a{
+    text-decoration: none;
+    color: black;
+}
+.select-menus{
+    background-color: white;
+    width: 1200px;
+    height: 100vh;
+    display: flex;
+}
+.card1{
+    width: 200px;
+    height: fit-content;
+    position: sticky;
+    top: 0;
+    text-align: left;
+}
+.card1 .menu_names{
+    padding: 1rem;
+    font-weight: 900;
+    margin: 2px;
+    border-left: #e4163d solid 3px;
+}
+
+.headText{
+    text-align: left;
+    font-weight: 700;
+    height: fit-content;
+    width: 100%;
+}
+.headText div{
+    padding: .5rem;
+}
+.select-foods{
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.select-foods div{
+    display: flex;
+}
+
+.card1 .menu_names:active{
+    color: #e4163d;
+    background-color: #e5e5e5;
+}
+.card1 .menu_names:visited{
+    color: #e4163d;
+    background-color: #e5e5e5;
+
+}
+.card1 .menu_names:hover{
+    color: #e4163d;
+    background-color: #e5e5e5;
+}
+.dummy-food-list{
+    margin-top: .5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.dummy-food-card{
+    margin: .5rem;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: auto;
+    flex-direction: column;
+}
+.dummy-food-card img{
+    width: 200px;
+    height: auto;
+}
+.dummy-desc{
+    color: white;
+    text-align: left;
+    height: 100%;
+    background-color: #e4163d;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dummy-desc div{
+    padding-left: 1rem;
+}
+.name{
+    padding: .5rem;
+    font-size: larger;
+    font-weight: 550;
+}
+.price{
+
+    font-size: medium;
+    font-weight: 600;
+}
+.operation{
+    font-size: larger;
+    font-weight: 800;
+}
+.input-wrapper{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.operation-btn button{
+    color: white;
+    outline: none;
+    border: none;
+    padding: 4px;
+    font-weight: 700;
+    background-color: #f68a1e;
+}
+@media screen and (max-width:600px) {
+    .select-menus{
+        width: 100%;
+    }
+    .select-foods{
+        width: 100%;
+    }
+    .card1{
+        display: none;
+    }
+    .headText{
+        width: 98%;
+    }
+    .dummy-food-card{
+        width: 100%;
+        font-size: small;
+    }
+    .price{
+        font-size: small;
+    }
+}
+@media screen and (max-width:2000px) {
+    .select-menus{
+        height: 100%;
+    }
+}

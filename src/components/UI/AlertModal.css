@@ -1,0 +1,41 @@
+.alert_backdrop{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.question{
+    padding: 1rem;
+}
+.alert_btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.alert_btn button{
+    margin-left: 5px;
+}
+.card{
+    margin: 0;
+    padding: 1rem;
+    margin: 1rem;
+    width: fit-content;
+}
+.alert_card{
+    padding: .5rem;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alert_img img{
+width: 50px;
+height: auto;
+}
+.alert_name{
+    font-size: 10px;
+}
+.alert_header{
+    display: flex;
+}
