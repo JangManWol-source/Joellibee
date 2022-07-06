@@ -22,14 +22,14 @@ const Cart = () => {
   return (
     <React.Fragment>
       <AlertModal />
-      <div className="cart">
-        <div className="cart_content">
+      <div className="w-full min-h-screen flex justify-center">
+        <div className="bg-yellow-50" style={{width: '1200px'}}>
           <div className="cart_title">Cart Items</div>
 
-          {items.length === 0 && <div className='no_data'>No cart items added yet</div>}
+          {items.length === 0 && <div className='w-full h-screen flex text-2xl items-center justify-center'>No cart items added yet</div>}
           <div>
             {items.map((each) => (
-              <Card className="cart_card" key={each.id}>
+              <Card className="m-2 p-8" key={each.id}>
                 <div className="cart_header">
                   <div>
                     <img src={each.img} alt="" />
@@ -42,7 +42,7 @@ const Cart = () => {
                     </div>
                   </div>
                 </div>
-                <div className="cart_bottom">
+                <div className="w-full flex justify-between">
                   <div className="cart_operations">
                     <div className="cart_quantity">
                       Quantity: {each.quantity}
@@ -79,7 +79,7 @@ const Cart = () => {
             ))}
           </div>
           {items.length > 0 && (
-            <div className="cart_item_bottom">
+            <div className="w-full flex justify-between p-2">
               <div className="cart_total_amount">
                 Total Amount: ₱ {parseFloat(totalAmount).toFixed(2)}
               </div>

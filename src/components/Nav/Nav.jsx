@@ -31,12 +31,12 @@ const Nav = (props) => {
               <img src={logo} alt="" />
             </Link>
           </div>
-          <div className={classes.bag}>
+          <div className="relative">
             <div >
               <Link to={'/cart/'}>
                 <img style={{ width: 30, height: "auto" }} src={bag} alt="" />
               </Link>
-              <div className={classes.count}>{cartContent}</div>
+              <div className="absolute top-1 bg-orange-400 rounded-full w-6 h-auto -left-2 font-extrabold text-center">{cartContent}</div>
             </div>
           </div>
         </div>
